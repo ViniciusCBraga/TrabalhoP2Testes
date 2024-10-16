@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sistema Escolar
 
-## Getting Started
+Este projeto é um sistema escolar desenvolvido para a disciplina de Testes Unitários e Gerenciamento de Projetos. O sistema permite gerenciar informações de alunos, professores, turmas e disciplinas. Foi implementado utilizando Prisma, Neon, Cloudinary e Clerk, com foco na aplicação de testes unitários para garantir a qualidade do código.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Prisma**: ORM para integração com banco de dados, facilitando o gerenciamento de dados relacionais.
+- **Neon**: Plataforma de banco de dados PostgreSQL na nuvem.
+- **Cloudinary**: Plataforma de gestão de imagens, usada para armazenar fotos de perfis de usuários e documentos importantes.
+- **Clerk**: Autenticação e gerenciamento de identidade de usuários, proporcionando segurança na autenticação do sistema.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Gerenciamento de Alunos e Professores**: Registre, edite, remova e consulte informações de alunos e professores.
+- **Gerenciamento de Disciplinas e Turmas**: Crie turmas e disciplinas, atribuindo alunos e professores conforme necessário.
+- **Autenticação de Usuários**: Sistema de login e autenticação seguro utilizando o Clerk.
+- **Upload e Gestão de Imagens**: Upload de fotos de perfil e documentos através do Cloudinary.
+- **Testes Unitários**: Aplicação de testes unitários para garantir a qualidade e funcionalidade do sistema.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estrutura do Projeto
 
-## Learn More
+- **Backend**: Implementado com Node.js e Prisma para gerenciamento de dados e interação com o banco de dados PostgreSQL (Neon).
+- **Frontend**: Interface de usuário desenvolvida em React, proporcionando uma experiência simples e direta para a interação com o sistema.
+- **Banco de Dados**: O Neon (PostgreSQL) é utilizado como banco de dados principal para armazenar informações de alunos, professores e turmas.
+- **Armazenamento de Arquivos**: Cloudinary gerencia o armazenamento e exibição de imagens no sistema.
 
-To learn more about Next.js, take a look at the following resources:
+## Testes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Este projeto implementa testes unitários em diferentes partes do código, como:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Testes de Controllers**: Verificação das respostas das rotas de controle de usuários, turmas e disciplinas.
+- **Testes de Repositório**: Garantia de que as operações de banco de dados (CRUD) estão funcionando corretamente com o Prisma.
+- **Testes de Integração**: Validação do fluxo de dados entre as diferentes camadas do sistema.
 
-## Deploy on Vercel
+## Instalação
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone este repositório:
+   ```bash
+   git clone <url-do-repositório>
